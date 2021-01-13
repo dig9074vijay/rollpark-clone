@@ -59,42 +59,46 @@ class Header extends Component {
         <Navbar dark expand="md" sticky="top">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
-            <NavbarBrand className="mr-auto" href="/">
-              <img
-                src="assets/images/logo.png"
-                height="30"
-                width="41"
-                alt="Ristorante Con Fusion"
-              ></img>
+            <NavbarBrand className="mr-auto" href="/" style={{ fontFamily: "Comfortaa", color: "white" }}>
+             <h3>Rollpark</h3> 
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar>
-                <NavItem>
-                  <NavLink className="nav-link" to="/home">
-                    <span className="fa fa-home fa-lg"></span> Home
+              <Nav navbar className="ml-auto">
+                <NavItem className="align-self-center">
+                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}}  to="/home">
+                     Why Rollpark
+                  </NavLink>
+                </NavItem >
+                <NavItem className="align-self-center">
+                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/aboutus">
+                     Case Studies
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/aboutus">
-                    <span className="fa fa-info fa-lg"></span> About Us
+                <NavItem className="align-self-center">
+                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/menu">
+                     Installation
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/menu">
-                    <span className="fa fa-list fa-lg"></span> Menu
+                <NavItem className="align-self-center">
+                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/contactus">
+                     Company
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/contactus">
-                    <span className="fa fa-address-card fa-lg"></span> Contact
-                    Us
+                <NavItem className="align-self-center">
+                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/contactus">
+                     Specs
                   </NavLink>
-                </NavItem>
+                </NavItem >
               </Nav>
-              <Nav className="ml-auto" navbar>
+              <Nav className="ml-auto " navbar>
+                <NavItem className="align-self-center">
+                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/menu">
+                     FAQ
+                  </NavLink>
+                </NavItem>
                 <NavItem>
-                  <Button outline onClick={this.toggleModal}>
-                    <span className="fa fa-sign-in fa-lg"></span> Login
+                  <Button className="NavButton" onClick={this.toggleModal}>
+                     Get a Quote
                   </Button>
                 </NavItem>
               </Nav>
@@ -105,11 +109,11 @@ class Header extends Component {
           <div className="container">
             <div className="row row-header">
               <div className="col-12 col-sm-6">
-                <h1>Ristorante Con Fusion</h1>
+                <h1>Rollpark</h1>
                 <p>
-                  We take inspiration from the World's best cuisines, and create
+                  We take inspiration from the World's best infrastructure, and create
                   a unique fusion experience. Our lipsmacking creations will
-                  tickle your culinary senses!
+                  tickle your senses!
                 </p>
               </div>
             </div>
