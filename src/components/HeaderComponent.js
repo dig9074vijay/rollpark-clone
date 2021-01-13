@@ -64,35 +64,35 @@ class Header extends Component {
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar className="ml-auto">
-                <NavItem className="align-self-center">
-                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}}  to="/home">
+                <NavItem >
+                  <NavLink className="nav-link"   to="/home">
                      Why Rollpark
                   </NavLink>
                 </NavItem >
-                <NavItem className="align-self-center">
-                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/aboutus">
+                <NavItem >
+                  <NavLink className="nav-link"  to="/aboutus">
                      Case Studies
                   </NavLink>
                 </NavItem>
-                <NavItem className="align-self-center">
-                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/menu">
+                <NavItem >
+                  <NavLink className="nav-link"  to="/menu">
                      Installation
                   </NavLink>
                 </NavItem>
-                <NavItem className="align-self-center">
-                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/contactus">
+                <NavItem >
+                  <NavLink className="nav-link"  to="/contactus">
                      Company
                   </NavLink>
                 </NavItem>
-                <NavItem className="align-self-center">
-                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/contactus">
+                <NavItem >
+                  <NavLink className="nav-link"  to="/contactus">
                      Specs
                   </NavLink>
                 </NavItem >
               </Nav>
               <Nav className="ml-auto " navbar>
                 <NavItem className="align-self-center">
-                  <NavLink className="nav-link" style={{color: 'white', textDecoration: "none"}} activeStyle={{color: "#C4C4C4", textDecoration: 'none'}} to="/menu">
+                  <NavLink className="nav-link"  to="/menu">
                      FAQ
                   </NavLink>
                 </NavItem>
