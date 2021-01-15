@@ -17,6 +17,7 @@ import {
   Label,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import home from "../videos/home.mp4"
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -105,6 +106,12 @@ class Header extends Component {
             </Collapse>
           </div>
         </Navbar>
+        <video autoPlay
+          loop
+          muted
+          style={{position:"relative",width:"100%", height:"100%", objectFit:"cover",left:"50%",top:"50%", transform:"translate(-50%,-10%)"}}>         
+          <source src={home} type="video/mp4"/>
+        </video>
         <Jumbotron>
           <div className="container">
             <div className="row row-header">
