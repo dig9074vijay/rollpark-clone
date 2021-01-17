@@ -22,8 +22,8 @@
 .jumbotron {
   padding:70px 30px 70px 30px;
   margin:0px auto;
-  background: #9575CD ;
-  color:floralwhite;
+  background: #fff ;
+  color: #000;
 }
 
 address{
@@ -125,4 +125,8 @@ address{
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 18px;
+  }
+
+  .shadow{
+    box-shadow: 10px 10px 5px grey;
   }

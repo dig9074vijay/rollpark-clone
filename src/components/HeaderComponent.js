@@ -6,7 +6,7 @@ import {
   NavbarToggler,
   Collapse,
   NavItem,
-  Jumbotron,
+  
   Button,
   Modal,
   ModalHeader,
@@ -16,6 +16,7 @@ import {
   Input,
   Label,
 } from "reactstrap";
+import List from "./Jumbotron";
 import { NavLink } from "react-router-dom";
 import home from "../videos/home.mp4"
 class Header extends Component {
@@ -112,20 +113,7 @@ class Header extends Component {
           style={{position:"relative",width:"100%", height:"100%", objectFit:"cover",left:"50%",top:"50%", transform:"translate(-50%,-10%)"}}>         
           <source src={home} type="video/mp4"/>
         </video>
-        <Jumbotron>
-          <div className="container">
-            <div className="row row-header">
-              <div className="col-12 col-sm-6">
-                <h1>Rollpark</h1>
-                <p>
-                  We take inspiration from the World's best infrastructure, and create
-                  a unique fusion experience. Our lipsmacking creations will
-                  tickle your senses!
-                </p>
-              </div>
-            </div>
-          </div>
-        </Jumbotron>
+        <List/>
         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
           <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
           <ModalBody>
