@@ -14,7 +14,7 @@ const List = () => {
               </div>  
               <div className="col-12 col-sm-4">
                 <br/>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled left">
                   <li>-Roll it outand instantly park</li>
                   <li>-Re-use it on multiple sites</li>
                   <li>-Event parking, Overflow, Vehicle Storage</li>

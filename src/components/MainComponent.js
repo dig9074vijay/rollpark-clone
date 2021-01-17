@@ -1,8 +1,8 @@
 import { Component } from "react";
 import Header from "./HeaderComponent";
+import List from "./Jumbotron";
+import Row2 from "./Row2"
 
-import { Switch,  withRouter } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 class Main extends Component {
   render() {
@@ -10,17 +10,11 @@ class Main extends Component {
     return (
       <div>
         <Header />
-        <TransitionGroup>
-            <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
-              <Switch location={this.props.location}>
-                  
-              </Switch>
-            </CSSTransition>
-          </TransitionGroup>
-        
+        <List/>
+        <Row2/>
       </div>
     );
   }
 }
 
-export default withRouter(Main);
+export default (Main);
