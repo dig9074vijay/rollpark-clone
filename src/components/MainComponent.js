@@ -1,7 +1,8 @@
 import { Component } from "react";
 import Header from "./HeaderComponent";
 import List from "./Jumbotron";
-import Row2 from "./Row2"
+import Row2 from "./Row2";
+import CardRow3 from "./Cards";
 
 
 class Main extends Component {
@@ -12,6 +13,7 @@ class Main extends Component {
         <Header />
         <List/>
         <Row2/>
+        <CardRow3/>
       </div>
     );
   }
