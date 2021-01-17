@@ -3,6 +3,7 @@ import Header from "./HeaderComponent";
 import List from "./Jumbotron";
 import Row2 from "./Row2";
 import CardRow3 from "./Cards";
+import Row4 from "./Row4";
 
 
 class Main extends Component {
@@ -14,6 +15,7 @@ class Main extends Component {
         <List/>
         <Row2/>
         <CardRow3/>
+        <Row4/>
       </div>
     );
   }
