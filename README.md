@@ -1,6 +1,5 @@
 # Rollpark-clone
 
-### Task for Round - 2 Selection of NITP WEB TEAM
 
 <https://rollpark.netlify.app>
 
